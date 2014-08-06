@@ -30,6 +30,15 @@
             android:name=".DetailActivity"
             android:label="@string/title_activity_detail" >
         </activity>
+
+        <activity
+            android:name="com.example.eddie.sunshine.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName="com.example.eddie.sunshine.MyActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="MyActivity"/>
+        </activity>
     </application>
 
 </manifest>

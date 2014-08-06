@@ -39,6 +39,7 @@ public class DetailActivity extends ActionBarActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
         if (id == R.id.action_settings) {
+            startActivity(new Intent(this, SettingsActivity.class));
             return true;
         }
         return super.onOptionsItemSelected(item);
@@ -54,15 +55,15 @@ public class DetailActivity extends ActionBarActivity {
 
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                Bundle savedInstanceState) {
+                                 Bundle savedInstanceState) {
             Intent intent = getActivity().getIntent();
 
             View rootView = inflater.inflate(R.layout.fragment_detail, container, false);
 
             if(intent != null && intent.hasExtra(Intent.EXTRA_TEXT)) {
                 String str = intent.getStringExtra(Intent.EXTRA_TEXT);
-                        ((TextView) rootView.findViewById(R.id.detail_text))
-                .setText(str);
+                ((TextView) rootView.findViewById(R.id.detail_text))
+                        .setText(str);
 
             }
             return rootView;
