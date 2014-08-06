@@ -8,5 +8,7 @@
     <string name="test" translatable="false">test</string>
     <string name="action_search" translatable="false">search</string>
     <string name="action_compose" translatable="false">compose</string>
+    <string name="title_activity_display_message">My message</string>
+    <string name="title_activity_detail">DetailActivity</string>
 
 </resources>
