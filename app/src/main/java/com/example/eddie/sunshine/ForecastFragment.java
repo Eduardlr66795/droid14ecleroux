@@ -95,7 +95,7 @@ public  class ForecastFragment extends Fragment {
                 "Tomorrow - Sunny - 88/63",
                 "Wednesday - Sunny - 88/63",
                 "Thursday - Sunny - 88/63",
-                "Friday - Sunny - 88/631"
+                "Friday - Sunny - 88/6313"
         };
 
         ArrayList<String> forecastList = new ArrayList<String>(Arrays.asList(forecastArray));
