@@ -19,3 +19,4 @@ public class WeatherDataParser {
         return temperatureInfo.getDouble("max");
     }
 }
+ 
