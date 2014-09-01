@@ -1,5 +1,9 @@
 package com.example.eddie.sunshine;
 
+/**
+ * Created by eddie on 2014/09/01.
+ */
+
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
@@ -33,7 +37,4 @@ public class DisplayMessageActivity extends ActionBarActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-
-
-
 }
