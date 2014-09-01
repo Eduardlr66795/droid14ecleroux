@@ -259,7 +259,6 @@ public class FetchWeatherTask extends AsyncTask<String, Void, Void> {
             }
 
             if (buffer.length() == 0) {
-                // Stream was empty.  No point in parsing.
                 return null;
             }
             forecastJsonStr = buffer.toString();

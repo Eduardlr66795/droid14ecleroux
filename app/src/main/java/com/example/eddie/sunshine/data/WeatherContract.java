@@ -46,8 +46,6 @@ public class WeatherContract {
      * @return a DB-friendly representation of the date, using the format defined in DATE_FORMAT.
      */
     public static String getDbDateString(Date date){
-        // Because the API returns a unix timestamp (measured in seconds),
-        // it must be converted to milliseconds in order to be converted to valid date.
         SimpleDateFormat sdf = new SimpleDateFormat(DATE_FORMAT);
         return sdf.format(date);
     }

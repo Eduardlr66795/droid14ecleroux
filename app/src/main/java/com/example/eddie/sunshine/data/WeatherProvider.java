@@ -184,8 +184,6 @@ public class WeatherProvider extends ContentProvider {
 
     @Override
     public String getType(Uri uri) {
-
-        // Use the Uri Matcher to determine what kind of URI this is.
         final int match = sUriMatcher.match(uri);
 
         switch (match) {
